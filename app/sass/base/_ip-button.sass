@@ -1,0 +1,85 @@
+$background: #65abd0
+$text: #fff
+
+.ip-button 
+    position: relative
+    display: inline-block
+    background: $background
+    color: $text
+    padding: 18px 30px
+    margin-bottom: 0
+    font-size: 16px
+    font-weight: 600
+    line-height: 2px
+    text-align: center
+    white-space: nowrap
+    vertical-align: middle
+    touch-action: manipulation
+    user-select: none
+    background-image: none
+    border: 2px solid transparent
+    appearance: none
+    cursor: pointer
+    transition: all .3s ease
+
+    &:hover 
+        background: darken($background, 5%)
+
+    &__icon
+        display: block
+        width: 18px
+        height: 2px
+        border-radius: 1px
+        background-color: $text
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        
+
+        &:nth-child(1)
+            top: 35%
+            margin-top: 0
+
+        &:nth-child(2)
+            top: 50%
+
+        &:nth-child(3)
+            top: 65%
+
+    &--large 
+        font-size: 18px
+        padding: 23px 52px
+
+    &--small 
+        font-size: 14px
+        padding: 13px 45px
+
+    &--radius 
+        border-radius: 5px
+
+    &--round
+        border-radius: 30px
+
+    &--inverse
+        color: $background
+        background: $text
+        border-color: $background
+
+        &:hover
+            background-color: lighten($background,35%)
+
+    &--hamburger
+        width: 56px
+        height: 56px
+        padding: 0
+
+        &.ip-button--small
+            width: 44px
+            height: 44px
+
+    &--circle
+        &:before
+            background: url('../img/arrow-left.svg')
+        
+ 
+

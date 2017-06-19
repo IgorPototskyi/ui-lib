@@ -1,0 +1,26 @@
+@import "vars"
+@import "fonts"
+@import "base/base"
+
+body
+	font-size: 14px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	font-weight: 600
+	overflow-x: hidden
+	opacity: 1
+
+	input:focus:required:invalid,
+	textarea:focus:required:invalid,
+	input:required:valid,
+	textarea:required:valid
+		color: #666
+
+.s
+    padding: 75px 120px 0
+
+    .ip-color, .ip-button
+        margin: 25px 20px 0 0
+        &:last-child
+            margin-right: 0
